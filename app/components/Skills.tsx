@@ -1,44 +1,46 @@
 "use client"
 
 import { motion } from "framer-motion"
-import {
-  CodepenIcon as Javascript,
-  CodepenIcon as React,
-  FileCode2,
-  Heading5Icon as Html5,
-  CodepenIcon as Css3,
-  Server,
-  Database,
-  EclipseIcon as Java,
-  GitBranch,
-  Figma,
-  Cloud,
-  Code,
-  Code2,
-} from "lucide-react"
+import { 
+  SiJavascript, 
+  SiReact, 
+  SiHtml5, 
+  SiCss3,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiSpringboot,
+  SiC,
+  SiCplusplus,
+  SiOpenjdk,
+  SiGit,
+  SiFigma,
+  SiAmazon
+} from 'react-icons/si'
 
 const skillsData = {
   Frontend: [
-    { name: "JavaScript", icon: Javascript },
-    { name: "ReactJS", icon: React },
-    { name: "React-Native", icon: React },
-    { name: "HTML", icon: Html5 },
-    { name: "CSS", icon: Css3 },
+    { name: "JavaScript", icon: SiJavascript },
+    { name: "ReactJS", icon: SiReact },
+    { name: "React-Native", icon: SiReact },
+    { name: "HTML", icon: SiHtml5 },
+    { name: "CSS", icon: SiCss3 },
   ],
   Backend: [
-    { name: "NodeJs", icon: Server },
-    { name: "Express", icon: Server },
-    { name: "MongoDB", icon: Database },
-    { name: "PostgreSQL", icon: Database },
-    { name: "Java (Spring Boot)", icon: Java },
+    { name: "NodeJs", icon: SiNodedotjs },
+    { name: "Express", icon: SiExpress },
+    { name: "MongoDB", icon: SiMongodb },
+    { name: "PostgreSQL", icon: SiPostgresql },
+    { name: "Java (Spring Boot)", icon: SiSpringboot },
   ],
   Others: [
-    { name: "C", icon: Code },
-    { name: "C++", icon: Code2 },
-    { name: "Java", icon: Java },
-    { name: "Git", icon: GitBranch },
-    { name: "Figma", icon: Figma },
-    { name: "AWS", icon: Cloud },
+    { name: "C", icon: SiC },
+    { name: "C++", icon: SiCplusplus },
+    { name: "Java", icon: SiOpenjdk },
+    { name: "Git", icon: SiGit },
+    { name: "Figma", icon: SiFigma },
+    { name: "AWS", icon: SiAmazon },
   ],
 }
 
@@ -53,7 +55,7 @@ export default function Skills() {
       >
         Skills
       </motion.h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
         {Object.entries(skillsData).map(([category, skills], index) => (
           <motion.div
             key={category}
