@@ -12,18 +12,18 @@ import {
   SiPostgresql,
   SiSpringboot,
   SiC,
-  SiCplusplus,
+  SiPython,
   SiOpenjdk,
   SiGit,
   SiFigma,
-  SiAmazon
+  SiAmazon,
+  SiPostman
 } from 'react-icons/si'
 
 const skillsData = {
   Frontend: [
-    { name: "JavaScript", icon: SiJavascript },
     { name: "ReactJS", icon: SiReact },
-    { name: "React-Native", icon: SiReact },
+    { name: "JavaScript", icon: SiJavascript },
     { name: "HTML", icon: SiHtml5 },
     { name: "CSS", icon: SiCss3 },
   ],
@@ -36,8 +36,9 @@ const skillsData = {
   ],
   Others: [
     { name: "C", icon: SiC },
-    { name: "C++", icon: SiCplusplus },
+    { name: "Python", icon: SiPython },
     { name: "Java", icon: SiOpenjdk },
+    { name: "Postman", icon: SiPostman },
     { name: "Git", icon: SiGit },
     { name: "Figma", icon: SiFigma },
     { name: "AWS", icon: SiAmazon },
